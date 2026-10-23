@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <meta name="description" content="A genetic algorithm searches for a shorter route around a sphere.">
+    <title>Evolution routes · Dan1l0s</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Evolution routes</h1>
+        <a href="https://github.com/Dan1l0s/evolution-routes">Dan1l0s</a>
+      </header>
+      <canvas id="canvas" width="700" height="440" role="img" aria-label="A population of routes evolves on a sphere. Parent routes are faint; inherited or mutated edges are blue.">
+        A genetic algorithm searches for a shorter spherical tour.
+      </canvas>
+      <noscript>JavaScript is needed to run the animation.</noscript>
+      <div class="controls">
+        <button id="play" type="button" aria-pressed="false">Play</button>
+        <button id="restart" type="button">Restart</button>
+        <label for="theme">Theme
+          <select id="theme">
+            <option value="auto">System</option>
+            <option value="dark">Dark</option>
+            <option value="light">Light</option>
+          </select>
+        </label>
+      </div>
+      <div class="timeline-label">
+        <label for="timeline">Progress</label>
+        <output id="time" for="timeline">18.2 / 24 s</output>
+      </div>
+      <input id="timeline" type="range" min="0" max="24" step="0.05" value="18.2">
+      <p id="status" aria-live="off"></p>
+    </main>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

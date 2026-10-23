@@ -1,0 +1,17 @@
+{
+  "name": "evolution-routes",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "render": "node scripts/render.mjs"
+  },
+  "devDependencies": {
+    "@napi-rs/canvas": "0.1.100",
+    "gifenc": "1.0.3"
+  }
+}
